@@ -1,5 +1,5 @@
 # indelec-ionic
 Ionic application for indelec lightning counter
 
-#launch dev
+# launch dev
 ionic serve
