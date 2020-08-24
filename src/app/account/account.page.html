@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ "ACCOUNT_PAGE.TITLE" | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center-container pad-50">
+    <div class="email-label">{{ "EMAIL_LABEL" | translate }}:</div>
+    <br/>
+    <div *ngIf="email">{{ email }}</div>
+    <div *ngIf="!email">{{ "ACCOUNT_PAGE.NOT_EMAIL" | translate }}</div>
+    <ion-item lines="none">
+      <ion-label *ngIf='newsSub'>{{ "ACCOUNT_PAGE.NEWS_SUB" | translate }}</ion-label>
+      <ion-label *ngIf='!newsSub'>{{ "ACCOUNT_PAGE.NEWS_NOT_SUB" | translate }}</ion-label>
+    </ion-item>
+    <ion-button expand="block" (click)="changeInfos()">{{ "ACCOUNT_PAGE.CHANGE_INFOS" | translate }}</ion-button>
+  </div>
+</ion-content>

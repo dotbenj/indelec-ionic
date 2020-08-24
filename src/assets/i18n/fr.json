@@ -1,0 +1,35 @@
+{
+  "HOME": "Scanner un appareil",
+  "MY_ACCOUNT": "Mon compte",
+  "PREFERENCES": "Options",
+  "HELP": "Besoin d'aide ?",
+  "EMAIL_LABEL": "Adresse email ",
+  "NEWSLETTER": "Souscrire à la newsletter",
+  "ACCOUNT_PAGE": {
+    "TITLE": "Mon compte",
+    "NEWS_SUB": "Vous avez souscris à la newsletter",
+    "NEWS_NOT_SUB": "Vous n'êtes pas inscris à la newsletter",
+    "NOT_EMAIL": "Vous n'avez pas encore renseigné d'adresse email",
+    "CHANGE_INFOS": "Changer vos informations"
+  },
+  "HOME_PAGE": {
+    "TITLE": "Scanner l'appareil"
+  },
+  "HELP_PAGE": {
+    "TITLE": "Besoin d'aide ?"
+  },
+  "SUBSCRIBE_PAGE": {
+    "TITLE": "Restons en contact",
+    "INTRO": "Vous pouvez nous transmettre votre adresse email afin que nous puission vous informer des évolutions de nos produits",
+    "SKIP": "Plus tard",
+    "SEND": "Envoyer"
+  },
+  "PREFERENCES_PAGE": {
+    "TITLE": "Options",
+    "LANGUAGES_SELECTOR_TITLE": "Selectionner une langue :",
+    "FRENCH": "Français",
+    "SPANISH": "Espagnole",
+    "PORTUGES": "Portuguais",
+    "ENGLISH": "Anglais"
+  }
+}

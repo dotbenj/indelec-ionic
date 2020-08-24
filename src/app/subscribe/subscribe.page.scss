@@ -1,0 +1,12 @@
+:host {
+  .center-container {
+    ion-item {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .newsletter {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

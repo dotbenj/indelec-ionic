@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ 'SUBSCRIBE_PAGE.TITLE' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center-container pad-50">
+    <p>{{ 'SUBSCRIBE_PAGE.INTRO' | translate }}</p>
+    <ion-item>
+      <ion-label position="floating">{{ 'EMAIL_LABEL' | translate }}</ion-label>
+      <ion-input type="email" [(ngModel)]="email" email></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-toggle
+        slot="start"
+        color="primary"
+        mode="ios"
+        [(ngModel)]="newsSub">
+      </ion-toggle>
+      <ion-label>{{ "NEWSLETTER" | translate }}</ion-label>
+    </ion-item>
+    <ion-button expand="block" (click)="sendEmail()">{{ 'SUBSCRIBE_PAGE.SEND' | translate }}</ion-button>
+    <ion-button expand="block" color="warning" (click)="skipEmail()">{{ 'SUBSCRIBE_PAGE.SKIP' | translate }}</ion-button>
+  </div>
+</ion-content>

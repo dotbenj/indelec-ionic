@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ "PREFERENCES_PAGE.TITLE" | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center-container pad-50">
+    <div class="languages-selector-title">{{ "PREFERENCES_PAGE.LANGUAGES_SELECTOR_TITLE" | translate }}</div>
+    <ion-list>
+      <ion-item button="true" *ngFor="let lang of langs" (click)="selectLang(lang)">
+        <span *ngIf="lang === 'fr'">{{ "PREFERENCES_PAGE.FRENCH" | translate }}</span>
+        <span *ngIf="lang === 'es'">{{ "PREFERENCES_PAGE.SPANISH" | translate }}</span>
+        <span *ngIf="lang === 'pt'">{{ "PREFERENCES_PAGE.PORTUGES" | translate }}</span>
+        <span *ngIf="lang === 'en'">{{ "PREFERENCES_PAGE.ENGLISH" | translate }}</span>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

@@ -1,0 +1,35 @@
+{
+  "HOME": "Scan a device",
+  "MY_ACCOUNT": "My account",
+  "PREFERENCES": "Preferences",
+  "HELP": "Need help?",
+  "EMAIL_LABEL": "Email address",
+  "NEWSLETTER": "Subscribe to newsletter",
+  "ACCOUNT_PAGE": {
+    "TITLE": "Account",
+    "NEWS_SUB": "You subrscribed to the newsletter",
+    "NEWS_NOT_SUB": "You have not subscribe to the newsletter yet",
+    "NOT_EMAIL": "You have not set you email address yet",
+    "CHANGE_INFOS": "Change your informations"
+  },
+  "HOME_PAGE": {
+    "TITLE": "Scan your device"
+  },
+  "HELP_PAGE": {
+    "TITLE": "Need help?"
+  },
+  "SUBSCRIBE_PAGE": {
+    "TITLE": "Get in touch",
+    "INTRO": "You can send us your email address in order to allow us to give you updates on our products",
+    "SKIP": "I'd rather skip this",
+    "SEND": "Send"
+  },
+  "PREFERENCES_PAGE": {
+    "TITLE": "Preferences",
+    "LANGUAGES_SELECTOR_TITLE": "Select language:",
+    "FRENCH": "French",
+    "SPANISH": "Spanish",
+    "PORTUGES": "Portuges",
+    "ENGLISH": "English"
+  }
+}
