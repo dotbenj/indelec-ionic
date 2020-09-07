@@ -3,7 +3,9 @@
     <ion-menu contentId="main-content" type="overlay" (ionWillOpen)='checkLang()'>
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Indelec</ion-list-header>
+          <ion-list-header>
+            <div class="menu-header-logo"></div>
+          </ion-list-header>
 
           <ion-menu-toggle auto-hide="false">
             <ion-item routerDirection="root" [routerLink]="['/home']" lines="none" detail="false">

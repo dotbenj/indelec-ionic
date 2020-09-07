@@ -8,11 +8,26 @@ import { TranslationService } from '../services/translation.service';
 })
 export class HelpPage implements OnInit {
 
-  constructor(private translationService: TranslationService) {
+  public email: string;
+  public message: string;
+
+  constructor(
+    private translationService: TranslationService,
+  ) {
     translationService.initLanguage();
   }
 
   ngOnInit() {
+  }
+
+  ionViewDidEnter() {
+    if (localStorage.getItem('indelec_user_email')) {
+      this.email = localStorage.getItem('indelec_user_email');
+    }
+  }
+
+  sendMessage(): void {
+    console.log('message sent');
   }
 
 }

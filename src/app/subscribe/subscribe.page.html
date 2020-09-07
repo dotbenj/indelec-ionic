@@ -22,5 +22,11 @@
     </ion-item>
     <ion-button expand="block" (click)="sendEmail()">{{ 'SUBSCRIBE_PAGE.SEND' | translate }}</ion-button>
     <ion-button expand="block" color="warning" (click)="skipEmail()">{{ 'SUBSCRIBE_PAGE.SKIP' | translate }}</ion-button>
+    <div class="privacy-link">
+      <a href="https://indelec.com/legal-notice-and-privacy-policy/">{{ "SUBSCRIBE_PAGE.PRIVACY_LINK" | translate }}</a>
+    </div>
   </div>
 </ion-content>
+<ion-footer class="page-footer ion-no-border">
+  <div class="inner-logo"></div>
+</ion-footer>

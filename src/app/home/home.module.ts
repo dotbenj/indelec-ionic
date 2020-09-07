@@ -6,6 +6,9 @@ import { IonicModule } from '@ionic/angular';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { NFC, NfcUtil } from '@ionic-native/nfc/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
 import { HomePage } from './home.page';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -33,6 +36,9 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   declarations: [HomePage],
   providers: [
+    Geolocation,
+    NFC,
+    NfcUtil,
     TranslationService,
   ],
 })

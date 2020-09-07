@@ -13,16 +13,26 @@
     "CHANGE_INFOS": "Changer vos informations"
   },
   "HOME_PAGE": {
-    "TITLE": "Scanner l'appareil"
+    "TITLE": "Scanner l'appareil",
+    "START_SCAN": "Démarrer le scan du compteur de foudre",
+    "LOADING": "Lecture du compteur de foudre",
+    "ERROR": "Une erreur c'est produite veuillez recommencer",
+    "SCAN_AGAIN": "Scanner à nouveau",
+    "COUNT_LABEL": "Coups de foudre"
   },
   "HELP_PAGE": {
-    "TITLE": "Besoin d'aide ?"
+    "TITLE": "Besoin d'aide ?",
+    "USER_EMAIL": "Votre adresse email :",
+    "MESSAGE": "Votre message :",
+    "TEXT": "Laissez nous vos coordonnées et votre message et nous reviendrons vers vous le plus vite possible.",
+    "SEND_MESSAGE": "Envoyer le message"
   },
   "SUBSCRIBE_PAGE": {
     "TITLE": "Restons en contact",
     "INTRO": "Vous pouvez nous transmettre votre adresse email afin que nous puission vous informer des évolutions de nos produits",
     "SKIP": "Plus tard",
-    "SEND": "Envoyer"
+    "SEND": "Envoyer",
+    "PRIVACY_LINK": "Lien vers notre politique de gestion des données personnelles"
   },
   "PREFERENCES_PAGE": {
     "TITLE": "Options",

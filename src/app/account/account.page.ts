@@ -26,6 +26,8 @@ export class AccountPage implements OnInit {
     this.email = localStorage.getItem('indelec_user_email') ? localStorage.getItem('indelec_user_email') : null;
     if (localStorage.getItem('indelec_newsletter_subscription') === 'true') {
       this.newsSub = true;
+    } else {
+      this.newsSub = false;
     }
   }
 

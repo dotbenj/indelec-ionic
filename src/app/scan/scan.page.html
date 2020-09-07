@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ "HOME_PAGE.TITLE" | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center-container">
+    <div class="txt-bold" *ngIf="step === 'loading'">
+      <div><ion-spinner name="dots"></ion-spinner></div>
+      <div>{{ "HOME_PAGE.LOADING" | translate }}</div>
+    </div>
+    <div class="txt-bold pad-50" *ngIf="step === 'error'">
+      <div class="error">{{ "HOME_PAGE.ERROR" | translate }}</div>
+      <ion-button expand="block" (click)="newScan()">{{ 'HOME_PAGE.SCAN_AGAIN' | translate }}</ion-button>
+    </div>
+    <div class="txt-bold pad-50" *ngIf="step === 'success'">
+      <div class="debug">
+        <div *ngIf="debugValue">debug value: {{ debugValue }}</div>
+      </div>
+      <div class="count">{{ count }}</div>
+      <div>{{ "HOME_PAGE.COUNT_LABEL" | translate }}</div>
+      <div class="date">{{ time | date:'dd/MM/yyyy hh:mm'}}</div>
+      <div *ngIf="!geoError">
+        <div>GPS</div>
+        <div>{{lat}}, {{lng}}</div>
+      </div>
+      <ion-button class="btn-retry" expand="block" (click)="newScan()">{{ 'HOME_PAGE.SCAN_AGAIN' | translate }}</ion-button>
+    </div>
+    <div class="errorMessage">
+      <div *ngIf="errorMessage">Error: {{ errorMessage }}</div>
+    </div>
+  </div>
+</ion-content>

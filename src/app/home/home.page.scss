@@ -1,0 +1,35 @@
+:host {
+  .start-scan {
+    display: flex;
+    flex-direction: column;
+    ion-icon {
+      font-size: 100px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+  .waiting-gif {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../../assets/scan.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .error {
+    color: var(--ion-color-danger);
+    margin-bottom: 20px;
+  }
+  
+  .count {
+    font-size: 75px;
+    margin-bottom: 10px;
+  }
+  .date {
+    margin: 30px 0px;
+  }
+  .btn-retry {
+    margin-top: 20px;
+  }
+}

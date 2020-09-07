@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'preferences',
     loadChildren: () => import('./preferences/preferences.module').then( m => m.PreferencesPageModule)
   },
+  {
+    path: 'scan',
+    loadChildren: () => import('./scan/scan.module').then( m => m.ScanPageModule)
+  },
 ];
 
 @NgModule({

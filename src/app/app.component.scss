@@ -33,11 +33,17 @@ ion-menu.md ion-list#inbox-list {
 }
 
 ion-menu.md ion-list#inbox-list ion-list-header {
-  font-size: 22px;
-  font-weight: 600;
-
-  min-height: 20px;
+  height: 50px;
   margin-bottom: 20px;
+}
+
+ion-menu.md ion-list#inbox-list ion-list-header div.menu-header-logo {
+  width: 80%;
+    height: 100%;
+    background-image: url("../assets/Indelec_logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 ion-menu.md ion-list#labels-list ion-list-header {

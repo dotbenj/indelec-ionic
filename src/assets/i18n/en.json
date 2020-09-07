@@ -13,16 +13,26 @@
     "CHANGE_INFOS": "Change your informations"
   },
   "HOME_PAGE": {
-    "TITLE": "Scan your device"
+    "TITLE": "Scan your device",
+    "START_SCAN": "Scan lightning counter",
+    "LOADING": "Scanning lightning counter",
+    "ERROR": "Something went wrong, please try again",
+    "SCAN_AGAIN": "New scan",
+    "COUNT_LABEL": "Lightning strikes"
   },
   "HELP_PAGE": {
-    "TITLE": "Need help?"
+    "TITLE": "Need help?",
+    "USER_EMAIL": "Your email address:",
+    "MESSAGE": "Your message:",
+    "TEXT": "Give us you email and your message and we will get back to you as soon as possible.",
+    "SEND_MESSAGE": "Send message"
   },
   "SUBSCRIBE_PAGE": {
     "TITLE": "Get in touch",
     "INTRO": "You can send us your email address in order to allow us to give you updates on our products",
     "SKIP": "I'd rather skip this",
-    "SEND": "Send"
+    "SEND": "Send",
+    "PRIVACY_LINK": "Link on personnal data privacy policy"
   },
   "PREFERENCES_PAGE": {
     "TITLE": "Preferences",

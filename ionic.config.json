@@ -1,5 +1,8 @@
 {
   "name": "indelec",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "f3f6aae6"
 }

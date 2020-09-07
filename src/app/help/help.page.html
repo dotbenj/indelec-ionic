@@ -8,5 +8,23 @@
 </ion-header>
 
 <ion-content>
-
+  <div class="center-container pad-50">
+    <p>{{ "HELP_PAGE.TEXT" | translate }}</p>
+    <ion-item>
+      <ion-label position="floating">
+        {{ "HELP_PAGE.USER_EMAIL" | translate }}
+      </ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        {{ "HELP_PAGE.MESSAGE" | translate }}
+      </ion-label>
+      <ion-textarea rows="6" [(ngModel)]="message"></ion-textarea>
+    </ion-item>
+    <ion-button expand="block" (click)="sendMessage()">{{ 'HELP_PAGE.SEND_MESSAGE' | translate }}</ion-button>
+  </div>
 </ion-content>
+<ion-footer class="page-footer ion-no-border">
+  <div class="inner-logo"></div>
+</ion-footer>
