@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { NFC, NfcUtil } from '@ionic-native/nfc/ngx';
+import { Screenshot } from '@ionic-native/screenshot/ngx';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
 import { TranslationService } from '../services/translation.service';
 
@@ -13,7 +15,7 @@ import { TranslationService } from '../services/translation.service';
 })
 export class ScanPage implements OnInit {
 
-  public step = 'loading';
+  public step = 'success';
   public count: number;
   public time: Date;
   public lat: number;
@@ -27,6 +29,8 @@ export class ScanPage implements OnInit {
     private goelocation: Geolocation,
     private translationService: TranslationService,
     private router: Router,
+    private screenshot: Screenshot,
+    private socialShare: SocialSharing,
   ) {
     this.translationService.initLanguage();
   }
@@ -75,6 +79,22 @@ export class ScanPage implements OnInit {
 
   newScan() {
     this.router.navigate(['home']);
+  }
+
+  async share() {
+    console.log('Share');
+    try {
+      const screenPic = await this.screenshot.save('jpg', 80, 'indelecScreenshot.jpg');
+      const sharingOptions = {
+        files: [`file://${screenPic.filePath}`],
+      };
+      this.socialShare.shareWithOptions(sharingOptions).then(
+        (success) => console.log('Success', success),
+        (error) => console.log('Error', error),
+      );
+    } catch (error) {
+      console.log('Error Sharing', error);
+    }
   }
 
 }

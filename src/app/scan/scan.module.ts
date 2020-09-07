@@ -4,8 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { HttpClient } from '@angular/common/http';
 import { NFC, NfcUtil } from '@ionic-native/nfc/ngx';
+import { Screenshot } from '@ionic-native/screenshot/ngx';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 import { IonicModule } from '@ionic/angular';
@@ -40,6 +42,8 @@ export function createTranslateLoader(http: HttpClient) {
     NFC,
     NfcUtil,
     TranslationService,
+    Screenshot,
+    SocialSharing,
   ]
 })
 export class ScanPageModule {}

@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>{{ "HOME_PAGE.TITLE" | translate }}</ion-title>
+    <ion-button slot="end" fill="clear" *ngIf="step === 'success'" (click)="share()">
+        <ion-icon name="share-social-outline"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
