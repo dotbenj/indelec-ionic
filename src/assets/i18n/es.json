@@ -1,0 +1,46 @@
+{
+  "HOME": "Escanear un dispositivo",
+  "MY_ACCOUNT": "Mi cuenta",
+  "PREFERENCES": "Opciones",
+  "HELP": "Ayuda",
+  "EMAIL_LABEL": "Email address",
+  "NEWSLETTER": "Subscribe to newsletter",
+  "VERSION": "versión",
+  "ACCOUNT_PAGE": {
+    "TITLE": "Mi cuenta",
+    "NEWS_SUB": "Se suscribió al newsletter",
+    "NEWS_NOT_SUB": "No se suscribió al newsletter",
+    "NOT_EMAIL": "Dirección de correo electrónico pendiente de capturar",
+    "CHANGE_INFOS": "Cambiar su información"
+  },
+  "HOME_PAGE": {
+    "TITLE": "Escanear el dispositivo",
+    "START_SCAN": "Escanear contador de descargas",
+    "LOADING": "Cargando",
+    "ERROR": "Hubo un error, por favor vuelva a intentarlo",
+    "SCAN_AGAIN": "Escanear de nuevo",
+    "COUNT_LABEL": "Impactos de rayo"
+  },
+  "HELP_PAGE": {
+    "TITLE": "Ayuda",
+    "USER_EMAIL": "Su dirección de correo electrónico:",
+    "MESSAGE": "Su mensaje:",
+    "TEXT": "Deje su dirección de correo y mensaje, lo contactaremos lo antes posible.",
+    "SEND_MESSAGE": "Enviar mensaje"
+  },
+  "SUBSCRIBE_PAGE": {
+    "TITLE": "Sigamos en contacto",
+    "INTRO": "Actualice su dirección de correo para recibir información sobre nuestros productos y servicios",
+    "SKIP": "Más tarde",
+    "SEND": "Enviar",
+    "PRIVACY_LINK": "Política de privacidad de datos"
+  },
+  "PREFERENCES_PAGE": {
+    "TITLE": "Opciones",
+    "LANGUAGES_SELECTOR_TITLE": "Seleccione un idioma:",
+    "FRENCH": "Francés",
+    "SPANISH": "Español",
+    "PORTUGES": "Portugués",
+    "ENGLISH": "Inglés"
+  }
+}

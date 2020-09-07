@@ -1,0 +1,46 @@
+{
+  "HOME": "Escanear aparelho",
+  "MY_ACCOUNT": "Minha conta",
+  "PREFERENCES": "Opções",
+  "HELP": "Ajuda",
+  "EMAIL_LABEL": "Email address",
+  "NEWSLETTER": "Subscribe to newsletter",
+  "VERSION": "Versão",
+  "ACCOUNT_PAGE": {
+    "TITLE": "Minha conta",
+    "NEWS_SUB": "Você assinou a newsletter",
+    "NEWS_NOT_SUB": "Ainda não assinou a newsletter",
+    "NOT_EMAIL": "Você ainda não informou seu e-mail",
+    "CHANGE_INFOS": "Alterar suas informações"
+  },
+  "HOME_PAGE": {
+    "TITLE": "Escanear o aparelho",
+    "START_SCAN": "Escanear o contador de raios",
+    "LOADING": "Carregando",
+    "ERROR": "Houve um erro. Por favor, tente de novo.",
+    "SCAN_AGAIN": "Escanear de novo",
+    "COUNT_LABEL": "Descargas atmosféricas"
+  },
+  "HELP_PAGE": {
+    "TITLE": "Ajuda",
+    "USER_EMAIL": "Seu e-mail:",
+    "MESSAGE": "Sua mensagem:",
+    "TEXT": "Deixe seu contato e sua mensagem e retornaremos em breve.",
+    "SEND_MESSAGE": "Enviar mensagem"
+  },
+  "SUBSCRIBE_PAGE": {
+    "TITLE": "Fique em contato",
+    "INTRO": "Deixe seu email para acompanhar as nossas novidades de produtos",
+    "SKIP": "Mais tarde",
+    "SEND": "Enviar",
+    "PRIVACY_LINK": "Politica de gestão e proteção dos dados pessoais"
+  },
+  "PREFERENCES_PAGE": {
+    "TITLE": "Opções",
+    "LANGUAGES_SELECTOR_TITLE": "Escolha um idioma:",
+    "FRENCH": "Francês",
+    "SPANISH": "Espanhol",
+    "PORTUGES": "Português",
+    "ENGLISH": "Inglês"
+  }
+}

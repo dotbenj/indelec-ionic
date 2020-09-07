@@ -1,42 +1,43 @@
 {
-  "HOME": "Scan a device",
+  "HOME": "Scan device",
   "MY_ACCOUNT": "My account",
-  "PREFERENCES": "Preferences",
+  "PREFERENCES": "Options",
   "HELP": "Need help?",
   "EMAIL_LABEL": "Email address",
   "NEWSLETTER": "Subscribe to newsletter",
+  "VERSION": "version",
   "ACCOUNT_PAGE": {
     "TITLE": "Account",
     "NEWS_SUB": "You subrscribed to the newsletter",
-    "NEWS_NOT_SUB": "You have not subscribe to the newsletter yet",
-    "NOT_EMAIL": "You have not set you email address yet",
-    "CHANGE_INFOS": "Change your informations"
+    "NEWS_NOT_SUB": "Not subscribe yet to the Newsletter",
+    "NOT_EMAIL": "No email submitted yet",
+    "CHANGE_INFOS": "Change your data"
   },
   "HOME_PAGE": {
-    "TITLE": "Scan your device",
-    "START_SCAN": "Scan lightning counter",
-    "LOADING": "Scanning lightning counter",
+    "TITLE": "Scan device",
+    "START_SCAN": "Scan RFID lightning counter",
+    "LOADING": "Scanning",
     "ERROR": "Something went wrong, please try again",
     "SCAN_AGAIN": "New scan",
-    "COUNT_LABEL": "Lightning strikes"
+    "COUNT_LABEL": "Lightning discharges"
   },
   "HELP_PAGE": {
     "TITLE": "Need help?",
     "USER_EMAIL": "Your email address:",
     "MESSAGE": "Your message:",
-    "TEXT": "Give us you email and your message and we will get back to you as soon as possible.",
+    "TEXT": "Fill in your email address and message, we will revert to you as soon as possible.",
     "SEND_MESSAGE": "Send message"
   },
   "SUBSCRIBE_PAGE": {
-    "TITLE": "Get in touch",
-    "INTRO": "You can send us your email address in order to allow us to give you updates on our products",
-    "SKIP": "I'd rather skip this",
+    "TITLE": "Stay in touch",
+    "INTRO": "Update your email to receive updates on our products and services",
+    "SKIP": "Later",
     "SEND": "Send",
-    "PRIVACY_LINK": "Link on personnal data privacy policy"
+    "PRIVACY_LINK": "Privacy policy"
   },
   "PREFERENCES_PAGE": {
-    "TITLE": "Preferences",
-    "LANGUAGES_SELECTOR_TITLE": "Select language:",
+    "TITLE": "Options",
+    "LANGUAGES_SELECTOR_TITLE": "Choose language:",
     "FRENCH": "French",
     "SPANISH": "Spanish",
     "PORTUGES": "Portuges",

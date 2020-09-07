@@ -5,9 +5,10 @@
   "HELP": "Besoin d'aide ?",
   "EMAIL_LABEL": "Adresse email ",
   "NEWSLETTER": "Souscrire à la newsletter",
+  "VERSION": "version",
   "ACCOUNT_PAGE": {
     "TITLE": "Mon compte",
-    "NEWS_SUB": "Vous avez souscris à la newsletter",
+    "NEWS_SUB": "Vous êtes abonnés à la newsletter",
     "NEWS_NOT_SUB": "Vous n'êtes pas inscris à la newsletter",
     "NOT_EMAIL": "Vous n'avez pas encore renseigné d'adresse email",
     "CHANGE_INFOS": "Changer vos informations"

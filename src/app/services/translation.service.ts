@@ -51,28 +51,18 @@ export class TranslationService {
   initLanguage(): void {
     if (!localStorage.getItem('indelec_lang')) {
       console.log('INIT LANG', navigator.language);
-      switch (navigator.language) {
-        case 'fr-FR':
-        case 'fr-BE':
-        case 'fr-CA':
-        case 'fr-LU':
-        case 'fr-MC':
-        case 'fr-CH':
+      switch (navigator.language.split('-')[0]) {
+        case 'fr':
           this.selectedLanguageSubject.next('fr');
           break;
-          case 'en':
-          case 'en-BZ':
-          case 'en-CA':
-          case 'en-IE':
-          case 'en-JM':
-          case 'en-NZ':
-          case 'enPH':
-          case 'en-ZA':
-          case 'en-TT':
-          case 'en-GB':
-          case 'en-US':
-          case 'en-ZW':
+        case 'en':
           this.selectedLanguageSubject.next('en');
+          break;
+        case 'es':
+          this.selectedLanguageSubject.next('es');
+          break;
+        case 'pt':
+          this.selectedLanguageSubject.next('pt');
           break;
         default:
           this.selectedLanguageSubject.next('en');
