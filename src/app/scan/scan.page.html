@@ -18,20 +18,14 @@
       <ion-button expand="block" (click)="newScan()">{{ 'HOME_PAGE.SCAN_AGAIN' | translate }}</ion-button>
     </div>
     <div class="txt-bold pad-50" *ngIf="step === 'success'">
-      <div class="debug">
-        <div *ngIf="debugValue">debug value: {{ debugValue }}</div>
-      </div>
       <div class="count">{{ count }}</div>
       <div>{{ "HOME_PAGE.COUNT_LABEL" | translate }}</div>
       <div class="date">{{ time | date:'dd/MM/yyyy hh:mm'}}</div>
-      <div *ngIf="!geoError">
+      <div *ngIf="lat && lng && !geoError">
         <div>GPS</div>
         <div>{{lat}}, {{lng}}</div>
       </div>
       <ion-button class="btn-retry" expand="block" (click)="newScan()">{{ 'HOME_PAGE.SCAN_AGAIN' | translate }}</ion-button>
-    </div>
-    <div class="errorMessage">
-      <div *ngIf="errorMessage">Error: {{ errorMessage }}</div>
     </div>
   </div>
 </ion-content>

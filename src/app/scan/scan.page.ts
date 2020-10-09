@@ -41,7 +41,7 @@ export class ScanPage implements OnInit {
   ionViewWillEnter() {
     this.nfc.connect('android.nfc.tech.NfcV', 200).then(
       () => {
-        this.nfc.transceive('00 23 00 08').then(
+        this.nfc.transceive('02 23 00 08').then(
           (result) => {
             this.arrayByte = this.util.arrayBufferToHexString(result);
             if (this.arrayByte[8] && this.arrayByte[9]) {
