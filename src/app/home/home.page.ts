@@ -1,11 +1,9 @@
 import { Platform } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 import { TranslationService } from '../services/translation.service';
 
-import { NFC, NfcUtil, NfcTag } from '@ionic-native/nfc/ngx';
-import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { NFC, NfcTag } from '@ionic-native/nfc/ngx';
 import { Router } from '@angular/router';
 
 @Component({
@@ -24,8 +22,6 @@ export class HomePage implements OnInit {
 
   constructor(
     private nfc: NFC,
-    private util: NfcUtil,
-    private goelocation: Geolocation,
     private translationService: TranslationService,
     private router: Router,
     private platform: Platform,
@@ -49,7 +45,7 @@ export class HomePage implements OnInit {
         (error) => {
           console.log(error);
         }
-      )
+      );
     } else {
       this.nfc.readerMode(this.nfc.FLAG_READER_NFC_V).subscribe(
         async (nfcEvent) => {
