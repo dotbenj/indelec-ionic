@@ -19,7 +19,7 @@
     "LOADING": "Scanning",
     "ERROR": "Something went wrong, please try again",
     "SCAN_AGAIN": "New scan",
-    "COUNT_LABEL": "Lightning discharges"
+    "COUNT_LABEL": "Lightning discharge"
   },
   "HELP_PAGE": {
     "TITLE": "Need help?",
@@ -30,7 +30,7 @@
   },
   "SUBSCRIBE_PAGE": {
     "TITLE": "Stay in touch",
-    "INTRO": "Update your email to receive updates on our products and services",
+    "INTRO": "Enter your email to receive updates on our products and services",
     "SKIP": "Later",
     "SEND": "Send",
     "PRIVACY_LINK": "Privacy policy"

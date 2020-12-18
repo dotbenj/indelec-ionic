@@ -14,8 +14,8 @@
     <div *ngIf="email">{{ email }}</div>
     <div *ngIf="!email">{{ "ACCOUNT_PAGE.NOT_EMAIL" | translate }}</div>
     <ion-item lines="none">
-      <ion-label *ngIf='newsSub'>{{ "ACCOUNT_PAGE.NEWS_SUB" | translate }}</ion-label>
-      <ion-label *ngIf='!newsSub'>{{ "ACCOUNT_PAGE.NEWS_NOT_SUB" | translate }}</ion-label>
+      <div *ngIf='newsSub'>{{ "ACCOUNT_PAGE.NEWS_SUB" | translate }}</div>
+      <div *ngIf='!newsSub'>{{ "ACCOUNT_PAGE.NEWS_NOT_SUB" | translate }}</div>
     </ion-item>
     <ion-button expand="block" (click)="changeInfos()">{{ "ACCOUNT_PAGE.CHANGE_INFOS" | translate }}</ion-button>
   </div>
