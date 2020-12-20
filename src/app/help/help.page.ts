@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IndelecApiService } from '../services/indelec-api.service';
 import { TranslationService } from '../services/translation.service';
 
 @Component({
@@ -10,9 +11,11 @@ export class HelpPage implements OnInit {
 
   public email: string;
   public message: string;
+  public success: boolean;
 
   constructor(
     private translationService: TranslationService,
+    private api: IndelecApiService,
   ) {
     translationService.initLanguage();
   }
@@ -27,6 +30,14 @@ export class HelpPage implements OnInit {
   }
 
   sendMessage(): void {
+    this.api.sendMessage({ email: this.email, message: this.message }).subscribe({
+      next: () => {
+        this.success = true;
+      },
+      error: () => {
+        this.success = false;
+      }
+    })
     console.log('message sent');
   }
 

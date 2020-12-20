@@ -26,7 +26,8 @@
     "USER_EMAIL": "Seu e-mail:",
     "MESSAGE": "Sua mensagem:",
     "TEXT": "Deixe seu contato e sua mensagem e retornaremos em breve.",
-    "SEND_MESSAGE": "Enviar mensagem"
+    "SEND_MESSAGE": "Enviar mensagem",
+    "MESSAGE_SENT": "Mensagem enviada"
   },
   "SUBSCRIBE_PAGE": {
     "TITLE": "Fique em contato",

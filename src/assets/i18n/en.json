@@ -26,7 +26,8 @@
     "USER_EMAIL": "Your email address:",
     "MESSAGE": "Your message:",
     "TEXT": "Fill in your email address and message, we will revert to you as soon as possible.",
-    "SEND_MESSAGE": "Send message"
+    "SEND_MESSAGE": "Send message",
+    "MESSAGE_SENT": "Message sent"
   },
   "SUBSCRIBE_PAGE": {
     "TITLE": "Stay in touch",

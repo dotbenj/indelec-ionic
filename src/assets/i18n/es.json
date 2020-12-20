@@ -26,7 +26,8 @@
     "USER_EMAIL": "Su dirección de correo electrónico:",
     "MESSAGE": "Su mensaje:",
     "TEXT": "Deje su dirección de correo y mensaje, lo contactaremos lo antes posible.",
-    "SEND_MESSAGE": "Enviar mensaje"
+    "SEND_MESSAGE": "Enviar mensaje",
+    "MESSAGE_SENT": "Mensaje enviado"
   },
   "SUBSCRIBE_PAGE": {
     "TITLE": "Sigamos en contacto",

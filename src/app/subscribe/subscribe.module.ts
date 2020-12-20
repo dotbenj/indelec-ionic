@@ -11,6 +11,7 @@ import { SubscribePageRoutingModule } from './subscribe-routing.module';
 
 import { SubscribePage } from './subscribe.page';
 import { TranslationService } from '../services/translation.service';
+import { IndelecApiService } from '../services/indelec-api.service';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,6 +35,7 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [SubscribePage],
   providers: [
     TranslationService,
+    IndelecApiService,
   ]
 })
 export class SubscribePageModule {}

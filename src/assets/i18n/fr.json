@@ -26,7 +26,8 @@
     "USER_EMAIL": "Votre adresse email :",
     "MESSAGE": "Votre message :",
     "TEXT": "Laissez nous vos coordonnées et votre message et nous reviendrons vers vous le plus vite possible.",
-    "SEND_MESSAGE": "Envoyer le message"
+    "SEND_MESSAGE": "Envoyer le message",
+    "MESSAGE_SENT": "Message envoyé"
   },
   "SUBSCRIBE_PAGE": {
     "TITLE": "Restons en contact",
