@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class IndelecApiService {
 
-  private apiUrl = "http://bkmcmaq.cluster024.hosting.ovh.net"
+  private apiUrl = "http://localhost:8888";
 
   constructor(private http: HttpClient) {}
 
@@ -17,6 +17,7 @@ export class IndelecApiService {
     return this.http.post(`${this.apiUrl}/users`, {
       email: userInfo.email,
       newsletter: userInfo.newsletter,
+      token: this.getToken(),
     });
   }
 
@@ -24,13 +25,15 @@ export class IndelecApiService {
     return this.http.put(`${this.apiUrl}/users`, {
       email: userInfo.email,
       newsletter: userInfo.newsletter,
+      token: this.getToken(),
     })
   }
 
   sendMessage(userMessage: { email: string, message: string }): Observable<any> {
-    return this.http.post(`${this.apiUrl}/message`, {
+    return this.http.post(`${this.apiUrl}/messages`, {
       email: userMessage.email,
       message: userMessage.message,
+      token: this.getToken(),
     })
   }
 
