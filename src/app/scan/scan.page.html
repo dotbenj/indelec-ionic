@@ -20,7 +20,7 @@
     <div class="txt-bold pad-50" *ngIf="step === 'success'">
       <div class="count">{{ count }}</div>
       <div>{{ "HOME_PAGE.COUNT_LABEL" | translate }}</div>
-      <div class="date">{{ time | date:'dd/MM/yyyy hh:mm'}}</div>
+      <div class="date">{{ time | date:'dd/MM/yyyy hh:mm a'}}</div>
       <div *ngIf="lat && lng && !geoError">
         <div>GPS</div>
         <div>{{lat}}, {{lng}}</div>

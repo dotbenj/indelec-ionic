@@ -22,7 +22,7 @@
       </ion-label>
       <ion-textarea rows="6" [(ngModel)]="message"></ion-textarea>
     </ion-item>
-    <ion-button disabled="success" expand="block" (click)="sendMessage()">
+    <ion-button [disabled]="success" expand="block" (click)="sendMessage()">
       <span *ngIf="!success">{{ 'HELP_PAGE.SEND_MESSAGE' | translate }}</span>
       <span *ngIf="success">{{ 'HELP_PAGE.MESSAGE_SENT' | translate }}</span>
     </ion-button>

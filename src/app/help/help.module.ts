@@ -11,6 +11,7 @@ import { HelpPageRoutingModule } from './help-routing.module';
 
 import { HelpPage } from './help.page';
 import { TranslationService } from '../services/translation.service';
+import { IndelecApiService } from '../services/indelec-api.service';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,6 +35,7 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [HelpPage],
   providers: [
     TranslationService,
+    IndelecApiService,
   ],
 })
 export class HelpPageModule {}

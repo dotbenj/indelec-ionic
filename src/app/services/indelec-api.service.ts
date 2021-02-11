@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import * as moment from 'moment';
+import * as crypto from 'crypto-js';
 
 import { Observable } from 'rxjs';
 
@@ -21,7 +23,7 @@ export class IndelecApiService {
   changeUserInfo(userInfo: {email: string, newsletter: boolean }): Observable<any> {
     return this.http.put(`${this.apiUrl}/users`, {
       email: userInfo.email,
-      newsletter: userInfo.newsletter
+      newsletter: userInfo.newsletter,
     })
   }
 
@@ -30,6 +32,11 @@ export class IndelecApiService {
       email: userMessage.email,
       message: userMessage.message,
     })
+  }
+
+  getToken(): string {
+    const date = moment().format("YYYY-MM-DD");
+    return crypto.AES.encrypt(date, 'indelecSecret').toString();
   }
 
 }
